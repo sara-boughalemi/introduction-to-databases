@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="introduction.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="java">SQLite</h2>
+              <p class="java">SQLite is a self-contained, file-based, and fully open-source RDBMS known for its portability, reliability, and strong performance even in low-memory environments. Its transactions are ACID-compliant, even in cases where the system crashes or undergoes a power outage.
+
+                The SQLite project’s website describes it as a “serverless” database. Most relational database engines are implemented as a server process in which programs communicate with the host server through an interprocess communication that relays requests. With SQLite, though, any process that accesses the database reads from and writes to the database disk file directly. This simplifies SQLite’s setup process, since it eliminates any need to configure a server process. Likewise, there’s no configuration necessary for programs that will use the SQLite database: all they need is access to the disk.
+                
+                SQLite is free and open-source software, and no special license is required to use it. However, the project does offer several extensions — each for a one-time fee — that help with compression and encryption. Additionally, the project offers various commercial support packages, each for an annual fee.
+                Small footprint: As its name implies, the SQLite library is very lightweight. Although the space it uses varies depending on the system where it’s installed, it can take up less than 600KiB of space. Additionally, it’s fully self-contained, meaning there aren’t any external dependencies you have to install on your system for SQLite to work.
+                User-friendly: SQLite is sometimes described as a “zero-configuration” database that’s ready for use out of the box. SQLite doesn’t run as a server process, which means that it never needs to be stopped, started, or restarted and doesn’t come with any configuration files that need to be managed. These features help to streamline the path from installing SQLite to integrating it with an application.
+                Portable: Unlike other database management systems, which typically store data as a large batch of separate files, an entire SQLite database is stored in a single file. This file can be located anywhere in a directory hierarchy, and can be shared via removable media or file transfer protocol.</p>
+            </div>
+          </div>
+          <div class="face face2">
+            <h2>01</h2>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="python">MySQL</h2>
+              <p class="python"> According to the DB-Engines Ranking, MySQL has been the most popular open-source RDBMS since the site began tracking database popularity in 2012. It is a feature-rich product that powers many of the world’s largest websites and applications, including Twitter, Facebook, Netflix, and Spotify. Getting started with MySQL is relatively straightforward, thanks in large part to its exhaustive documentation and large community of developers, as well as the abundance of MySQL-related resources online.
+
+                MySQL was designed for speed and reliability, at the expense of full adherence to standard SQL. The MySQL developers continually work towards closer adherence to standard SQL, but it still lags behind other SQL implementations. It does, however, come with various SQL modes and extensions that bring it closer to compliance. Unlike applications using SQLite, applications using a MySQL database access it through a separate daemon process. Because the server process stands between the database and other applications, it allows for greater control over who has access to the database.
+                Popularity and ease of use: As one of the world’s most popular database systems, there’s no shortage of database administrators who have experience working with MySQL. Likewise, there’s an abundance of documentation in print and online on how to install and manage a MySQL database, as well as a number of third-party tools — such as phpMyAdmin — that aim to simplify the process of getting started with the database.
+                Security: MySQL comes installed with a script that helps you to improve the security of your database by setting the installation’s password security level, defining a password for the root user, removing anonymous accounts, and removing test databases that are, by default, accessible to all users. Also, unlike SQLite, MySQL does support user management and allows you to grant access privileges on a user-by-user basis.
+                Speed: By choosing not to implement certain features of SQL, the MySQL developers were able to prioritize speed. While more recent benchmark tests show that other RDBMSs like PostgreSQL can match or at least come close to MySQL in terms of speed, MySQL still holds a reputation as an exceedingly fast database solution.
+                Replication: MySQL supports a number of different types of replication, which is the practice of sharing information across two or more hosts to help improve reliability, availability, and fault-tolerance. This is helpful for setting up a database backup solution or horizontally scaling one’s database.</p>
+            </div>
+          </div>
+          <div class="face face2">
+            <h2>02</h2>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="cSharp"> PostgreSQL</h2>
+              <p class="cSharp">PostgreSQL, also known as Postgres, bills itself as “the most advanced open-source relational database in the world.” It was created with the goal of being highly extensible and standards compliant. PostgreSQL is an object-relational database, meaning that although it’s primarily a relational database it also includes features — like table inheritance and function overloading — that are more often associated with object databases.
+
+                Postgres is capable of efficiently handling multiple tasks at the same time, a characteristic known as concurrency
+                SQL compliance: More so than SQLite or MySQL, PostgreSQL aims to closely adhere to SQL standards. According to the official PostgreSQL documentation, PostgreSQL supports 160 out of the 179 features required for full core SQL:2011 compliance, in addition to a long list of optional features.
+                Open-source and community-driven: A fully open-source project, PostgreSQL’s source code is developed by a large and devoted community. Similarly, the Postgres community maintains and contributes to numerous online resources that describe how to work with the DBMS, including the official documentation, the PostgreSQL wiki, and various online forums.
+                Extensible: Users can extend PostgreSQL programmatically and on the fly through its catalog-driven operation and its use of dynamic loading. One can designate an object code file, such as a shared library, and PostgreSQL will load it as necessary.</p>
+            </div>
+          </div>
+          <div class="face face2">
+            <h2>03</h2>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
